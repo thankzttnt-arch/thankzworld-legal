@@ -1,54 +1,79 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <title>ThankzWorld AI Detector - Text a Photo or Video to Check if It's AI-Generated</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+  :root {
+    --navy-deep: #071224;
+    --gold: #c9a24a;
+    --gold-light: #e6b955;
+    --blue: #4a8ac9;
+    --blue-light: #7fc4ff;
+    --ink: #e8ecf1;
+    --ink-dim: #a9b8ca;
+  }
   body {
     font-family: -apple-system, Arial, sans-serif;
     max-width: 600px;
     margin: 0 auto;
     padding: 40px 20px;
     line-height: 1.6;
-    color: #222;
+    color: var(--ink);
     text-align: center;
+    background: var(--navy-deep);
   }
-  h1 { font-size: 1.8em; margin-bottom: 0.2em; }
-  .business-name { color: #555; font-size: 1em; margin-bottom: 2em; }
+  h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2.2em;
+    font-weight: 700;
+    margin-bottom: 0.2em;
+    background: linear-gradient(180deg, var(--gold-light), var(--gold));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .business-name { color: var(--blue-light); font-size: 0.95em; letter-spacing: 0.03em; margin-bottom: 2em; }
   .cta-box {
-    background: #f0f4ff;
-    border: 2px solid #3355dd;
-    border-radius: 12px;
+    background: rgba(30, 74, 122, 0.15);
+    border: 1px solid rgba(74, 138, 201, 0.35);
+    border-left: 4px solid var(--gold);
+    border-radius: 8px;
     padding: 30px 20px;
     margin: 30px 0;
   }
   .cta-box .number {
+    font-family: Georgia, serif;
     font-size: 1.6em;
     font-weight: bold;
-    color: #3355dd;
+    color: var(--gold-light);
     margin: 10px 0;
   }
-  .cta-box p { margin: 8px 0; }
+  .cta-box p { margin: 8px 0; color: var(--ink-dim); }
   .disclosure {
     font-size: 0.85em;
-    color: #666;
+    color: var(--ink-dim);
     margin-top: 30px;
     text-align: left;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid rgba(74, 138, 201, 0.2);
     padding-top: 20px;
   }
-  .disclosure a { color: #3355dd; }
+  .disclosure a { color: var(--blue-light); }
+  .disclosure strong { color: var(--ink); }
   .steps {
     text-align: left;
     max-width: 400px;
     margin: 20px auto;
+    color: var(--ink-dim);
   }
+  .steps strong { color: var(--ink); }
   .example-heading {
     font-size: 1.1em;
     font-weight: bold;
     margin-top: 40px;
     margin-bottom: 15px;
+    color: var(--ink);
   }
   .phone-mockup {
     background: #f5f5f7;
@@ -69,7 +94,7 @@
     clear: both;
   }
   .bubble.sent {
-    background: #3355dd;
+    background: var(--blue);
     color: white;
     float: right;
     border-bottom-right-radius: 4px;
@@ -85,14 +110,14 @@
 </head>
 <body>
 
-<h1>ThankzWorld AI Detector</h1>
-<p class="business-name">A service by ThankzWorld</p>
+<h1>ThankzWorld</h1>
+<p class="business-name">AI DETECTION, STRAIGHT FROM A TEXT</p>
 
 <p>See a photo or social media video (Instagram, Facebook, etc.) and wonder
 if it's AI-generated? Text it to us and find out.</p>
 
 <div class="cta-box">
-  <p><strong>Text START to:</strong></p>
+  <p><strong style="color: var(--ink);">Text START to:</strong></p>
   <div class="number">+1 (770) 525-1811</div>
   <p>Once subscribed, send us a photo or video link anytime and we'll reply
   with an automated verdict on whether the content appears to be
@@ -111,7 +136,7 @@ if it's AI-generated? Text it to us and find out.</p>
   <div class="bubble-row"><div class="bubble sent">START</div></div>
   <div class="bubble-row"><div class="bubble received">ThankzWorld AI Detector: You are now subscribed. Text a photo or social media video link anytime to check if it's AI-generated. Msg frequency varies. Msg &amp; data rates may apply. Reply HELP for help, STOP to cancel.</div></div>
   <div class="bubble-row"><div class="bubble sent">https://www.instagram.com/reel/example123/</div></div>
-  <div class="bubble-row"><div class="bubble received">🤖 Likely AI-generated (87% confidence)</div></div>
+  <div class="bubble-row"><div class="bubble received">ðŸ¤– Likely AI-generated (87% confidence)</div></div>
 </div>
 
 <div class="disclosure">
@@ -125,6 +150,8 @@ if it's AI-generated? Text it to us and find out.</p>
     <a href="https://thankzworld.com/privacy.html">Privacy Policy</a>
     &nbsp;|&nbsp;
     <a href="https://thankzworld.com/terms.html">Terms and Conditions</a>
+    &nbsp;|&nbsp;
+    <a href="https://thankzworld.com/purchase.html">Buy More Checks</a>
   </p>
   <p>Questions? Contact us at thankzttnt@gmail.com</p>
 </div>
