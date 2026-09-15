@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ThankzWorld — Get More Checks</title>
+<style>
+  :root {
+    --navy: #0a1930;
+    --navy-deep: #071224;
+    --gold: #c9a24a;
+    --gold-light: #e6b955;
+    --blue: #4a8ac9;
+    --blue-light: #7fc4ff;
+    --ink: #e8ecf1;
+    --ink-dim: #a9b8ca;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--navy-deep);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.55;
+  }
+  .wrap { max-width: 620px; margin: 0 auto; padding: 56px 24px 80px; }
+  header { text-align: center; margin-bottom: 48px; }
+  h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 700;
+    font-size: 2.4rem;
+    margin: 0 0 8px;
+    background: linear-gradient(180deg, var(--gold-light), var(--gold));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .tagline { color: var(--blue-light); font-size: 0.95rem; letter-spacing: 0.04em; margin: 0; }
+  .intro { color: var(--ink-dim); font-size: 1.05rem; text-align: center; max-width: 460px; margin: 24px auto 0; }
+  .tiers { display: flex; flex-direction: column; gap: 18px; margin-top: 48px; }
+  .tier {
+    background: rgba(30, 74, 122, 0.15);
+    border: 1px solid rgba(74, 138, 201, 0.35);
+    border-left-width: 4px;
+    border-left-color: var(--gold);
+    border-radius: 6px;
+    padding: 24px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .tier.popular { border-left-width: 7px; }
+  .tier.bulk { border-left-width: 10px; }
+  .tier-info h2 { margin: 0 0 4px; font-size: 1.25rem; color: var(--ink); }
+  .tier-info p { margin: 0; color: var(--ink-dim); font-size: 0.9rem; }
+  .tier-price { font-family: Georgia, serif; font-size: 1.6rem; font-weight: 700; color: var(--gold-light); white-space: nowrap; }
+  .buy-btn {
+    display: inline-block;
+    margin-top: 14px;
+    padding: 10px 22px;
+    background: var(--gold);
+    color: var(--navy-deep);
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 4px;
+    font-size: 0.95rem;
+  }
+  .buy-btn:hover { background: var(--gold-light); }
+  .tier-body { display: flex; flex-direction: column; align-items: flex-start; }
+  @media (max-width: 460px) {
+    .tier { flex-direction: column; align-items: flex-start; }
+    .tier-price { font-size: 1.4rem; }
+  }
+  .note { text-align: center; color: var(--ink-dim); font-size: 0.85rem; margin-top: 40px; line-height: 1.7; }
+  .note strong { color: var(--ink); }
+  footer { text-align: center; margin-top: 56px; padding-top: 24px; border-top: 1px solid rgba(74, 138, 201, 0.2); color: var(--ink-dim); font-size: 0.8rem; }
+  footer a { color: var(--blue-light); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>ThankzWorld</h1>
+      <p class="tagline">AI DETECTION, STRAIGHT FROM A TEXT</p>
+    </header>
+
+    <p class="intro">
+      Used your free checks? Pick a pack below. Credits land on your phone number
+      automatically — no app, no login, just text us your next photo or video link.
+    </p>
+
+    <div class="tiers">
+      <div class="tier">
+        <div class="tier-body">
+          <div class="tier-info">
+            <h2>Starter</h2>
+            <p>5 checks</p>
+          </div>
+          <a class="buy-btn" href="https://buy.stripe.com/test_6oUdR9bpdfRk1AreqyefC00">Buy for $5</a>
+        </div>
+        <div class="tier-price">$5</div>
+      </div>
+
+      <div class="tier popular">
+        <div class="tier-body">
+          <div class="tier-info">
+            <h2>Popular</h2>
+            <p>10 checks</p>
+          </div>
+          <a class="buy-btn" href="https://buy.stripe.com/test_7sY3cv9h5fRk5QH1DMefC03">Buy for $8</a>
+        </div>
+        <div class="tier-price">$8</div>
+      </div>
+
+      <div class="tier bulk">
+        <div class="tier-body">
+          <div class="tier-info">
+            <h2>Bulk</h2>
+            <p>25 checks</p>
+          </div>
+          <a class="buy-btn" href="https://buy.stripe.com/test_cNiaEX3WLdJcfrhdmuefC02">Buy for $15</a>
+        </div>
+        <div class="tier-price">$15</div>
+      </div>
+    </div>
+
+    <p class="note">
+      When you check out, enter the <strong>same phone number</strong> you text us from —
+      that's how we know whose account to add your checks to. Credits show up within
+      a minute or two of payment, with a confirmation text.
+    </p>
+
+    <footer>
+      Questions? Text HELP to your ThankzWorld number, or email
+      <a href="mailto:thankzttnt@gmail.com">thankzttnt@gmail.com</a>
+    </footer>
+  </div>
+</body>
+</html>
