@@ -1,22 +1,65 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <title>Privacy Policy - ThankzWorld AI Detector SMS</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-  body { font-family: -apple-system, Arial, sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #222; }
-  h1 { font-size: 1.6em; }
-  h2 { font-size: 1.2em; margin-top: 1.5em; }
-  .updated { color: #666; font-size: 0.9em; }
+  :root {
+    --navy-deep: #071224;
+    --gold: #c9a24a;
+    --gold-light: #e6b955;
+    --blue: #4a8ac9;
+    --blue-light: #7fc4ff;
+    --ink: #e8ecf1;
+    --ink-dim: #a9b8ca;
+  }
+  body { font-family: -apple-system, Arial, sans-serif; max-width: 700px; margin: 0 auto; padding: 0 20px 40px; line-height: 1.6; color: var(--ink); background: var(--navy-deep); }
+  h1 { font-size: 1.6em; color: var(--gold-light); }
+  h2 { font-size: 1.2em; margin-top: 1.5em; color: var(--ink); }
+  a { color: var(--blue-light); }
+  strong { color: var(--ink); }
+  .updated { color: var(--ink-dim); font-size: 0.9em; }
+  .navbar {
+    background: rgba(10, 25, 48, 0.6);
+    border-bottom: 1px solid rgba(74, 138, 201, 0.2);
+    padding: 14px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .navbar .logo {
+    font-family: Georgia, serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    background: linear-gradient(180deg, var(--gold-light), var(--gold));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-decoration: none;
+  }
+  .navbar ul { list-style: none; display: flex; gap: 20px; margin: 0; padding: 0; }
+  .navbar a { color: var(--ink-dim); text-decoration: none; font-size: 0.9em; }
+  .navbar a:hover { color: var(--gold-light); }
+  .back-link { display: inline-block; margin-top: 30px; }
 </style>
 </head>
 <body>
 
-<h1>Privacy Policy</h1>
-<p class="updated">Last updated: August 20, 2026</p>
+<nav class="navbar">
+  <a href="/" class="logo">ThankzWorld</a>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/purchase.html">Pricing</a></li>
+  </ul>
+</nav>
 
-<p><strong>Operated by: Todd Hankerson, doing business as ThankzWorld</strong></p>
+<h1>Privacy Policy</h1>
+<p class="updated">Last updated: September 20, 2026</p>
+
+<p><strong>Operated by: ThankzWorld LLC (Georgia, USA)</strong></p>
 <p>Service homepage: <a href="https://thankzworld.com/">https://thankzworld.com/</a></p>
 
 <p>ThankzWorld ("we", "our", "the service") operates ThankzWorld AI Detector
@@ -46,7 +89,9 @@ will receive one reply message for each photo or link you submit.</p>
 <h2>Third-party services</h2>
 <p>We use Twilio to send and receive text messages, and Hive (or a similar
 AI-detection provider) to analyze submitted content. These providers may
-process your message content as part of delivering the service. <strong>We
+process your message content as part of delivering the service. Payments,
+when processed, are handled by Stripe; we do not store your payment card
+details ourselves. <strong>We
 do not share, sell, or provide your mobile phone number or messaging
 consent data to third parties or affiliates for marketing or promotional
 purposes.</strong></p>
@@ -65,14 +110,51 @@ to and received from our service.</p>
 from this service. Reply <strong>HELP</strong> for assistance.</p>
 
 <h2>Data retention</h2>
-<p>We retain detection result logs (verdict, score, and phone number) for
-service improvement. We do not retain the actual submitted photos or
-videos. You may request deletion of your data by contacting us at the email
-below.</p>
+<p>We retain detection result logs (verdict, score, and phone number)
+indefinitely for as long as you remain a subscriber and for a reasonable
+period afterward to support service quality, fraud prevention, and dispute
+resolution. We do not retain the actual submitted photos or videos - these
+are processed in memory and discarded immediately after analysis. You may
+request deletion of your logged data at any time by contacting us at the
+email below.</p>
+
+<h2>Your data rights</h2>
+<p>Regardless of where you are located, you may contact us at any time to
+request a copy of the data we hold about your phone number, request its
+correction, or request its deletion. We will respond to verified requests
+within a reasonable timeframe.</p>
+
+<h2>Data security</h2>
+<p>We take reasonable technical measures to protect the data we collect,
+including encrypted connections (HTTPS/TLS) for all data in transit. No
+method of transmission or storage is completely secure, and we cannot
+guarantee absolute security.</p>
+
+<h2>Data breach notification</h2>
+<p>In the event of a data breach affecting your personal information, we
+will notify affected users via SMS or email (if available) without
+unreasonable delay, consistent with applicable law.</p>
+
+<h2>Cookies</h2>
+<p>This website does not use cookies or tracking scripts.</p>
+
+<h2>Children's privacy</h2>
+<p>This service is not directed to children under 13, and we do not
+knowingly collect information from children under 13. If you believe a
+child has used this service, please contact us so we can delete the
+associated data.</p>
+
+<h2>Geographic scope</h2>
+<p>This service currently operates within the United States. By using this
+service, you consent to the processing of your information in the United
+States, which may have different data protection laws than your
+jurisdiction.</p>
 
 <h2>Contact</h2>
 <p>Questions about this privacy policy can be sent to:
 <strong>thankzttnt@gmail.com</strong></p>
+
+<p class="back-link"><a href="/">&larr; Back to home</a></p>
 
 </body>
 </html>
