@@ -18,6 +18,7 @@
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "ThankzWorld",
+  "legalName": "ThankzWorld LLC",
   "url": "https://thankzworld.com/",
   "email": "thankzttnt@gmail.com",
   "founder": { "@type": "Person", "name": "Todd Hankerson" }
@@ -135,6 +136,18 @@
     border-bottom-left-radius: 4px;
   }
   .bubble-row { overflow: hidden; margin-bottom: 4px; }
+  .trust-box {
+    text-align: left;
+    background: rgba(201, 162, 74, 0.08);
+    border: 1px solid rgba(201, 162, 74, 0.35);
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 0 0 30px;
+  }
+  .trust-box p { margin: 6px 0; color: var(--ink-dim); }
+  .trust-box strong { color: var(--ink); }
+  .trust-box a { color: var(--blue-light); }
+  .demo-video { width: 100%; max-width: 380px; border-radius: 16px; display: block; margin: 0 auto; }
 .navbar {
   background: rgba(10, 25, 48, 0.6);
   border-bottom: 1px solid rgba(74, 138, 201, 0.2);
@@ -186,7 +199,7 @@
 <h1>ThankzWorld</h1>
 <p class="business-name">AI DETECTION, STRAIGHT FROM A TEXT</p>
 
-<p>See a photo or social media video (Instagram or Facebook -- YouTube not yet supported) and wonder
+<p>See a photo or social media video (Instagram, TikTok or Facebook &mdash; YouTube isn't supported yet) and wonder
 if it's AI-generated? Text it to us and find out.</p>
 
 <div class="cta-box">
@@ -196,6 +209,19 @@ if it's AI-generated? Text it to us and find out.</p>
   with an automated verdict on whether the content appears to be
   AI-generated.</p>
 </div>
+
+<div class="trust-box">
+  <p><strong>Try it free.</strong> Your first checks cost nothing &mdash; no card, no app, no account.</p>
+  <p><strong>You only pay for a clear answer.</strong> If a result is inconclusive, or we can't open a link, no credit is used.</p>
+  <p>Built and run by <a href="/about.html">Todd Hankerson</a> &middot; ThankzWorld LLC, Georgia</p>
+</div>
+
+<!-- DEMO VIDEO: when your screen recording is ready, save it in this folder
+     as demo.mp4, then delete this comment's first and last lines so the two
+     lines below show on the page.
+<p class="example-heading">Watch a real check</p>
+<video class="demo-video" src="demo.mp4" controls playsinline muted preload="metadata"></video>
+END OF DEMO VIDEO -->
 
 <div class="steps">
   <p><strong>How it works:</strong></p>
@@ -209,7 +235,7 @@ if it's AI-generated? Text it to us and find out.</p>
   <div class="bubble-row"><div class="bubble sent">START</div></div>
   <div class="bubble-row"><div class="bubble received">ThankzWorld AI Detector: You are now subscribed. Text a photo or social media video link anytime to check if it's AI-generated. Msg frequency varies. Msg &amp; data rates may apply. Reply HELP for help, STOP to cancel.</div></div>
   <div class="bubble-row"><div class="bubble sent">https://www.instagram.com/reel/example123/</div></div>
-  <div class="bubble-row"><div class="bubble received">&#129302; Likely AI-generated (87% confidence)</div></div>
+  <div class="bubble-row"><div class="bubble received">&#129302; Likely AI-generated &mdash; detectors scored it 87% AI-likelihood.</div></div>
 </div>
 
 <div class="disclosure">
@@ -227,6 +253,7 @@ if it's AI-generated? Text it to us and find out.</p>
     <a href="https://thankzworld.com/purchase.html">Buy More Checks</a>
   </p>
   <p>Questions? Contact us at thankzttnt@gmail.com</p>
+  <p>ThankzWorld LLC &middot; Georgia, USA &middot; Payments processed securely by Stripe</p>
 </div>
 
 </body>
